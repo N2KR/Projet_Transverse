@@ -1,9 +1,9 @@
-# Projet_Transverse TESTEUR
-Notre espace de test pour les codes:
+# Projet_Transverse programmeur
+Notre espace de creation pour les codes:
 
 Dans la branche :
 
--Les testeurs donneront leurs avis.
+-Les developpers codent en html et CSS
 
 
 
