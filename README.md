@@ -10,7 +10,3 @@ Dans la branche :
 -Organisateur fait les questions du QCM ou encore organisation de la page 
 
 -Et la branche testeur pour tester les codes et donner un avis 
-
-
-
-
