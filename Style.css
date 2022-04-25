@@ -7,4 +7,6 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75),url(image_fond.jpg));
+    background-size: cover;
+    background-position: center;
 }
