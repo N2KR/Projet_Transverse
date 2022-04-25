@@ -6,8 +6,102 @@
 
 .banner{
     width: 100%;
-    background:url("image_fond.jpg");
+    background:url("image_fond2.jpg");
     background-position: center;
     background-size: cover;
     height: 109vh;
+}
+
+.navbar{
+    width: 1200%;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+
+}
+
+.logo{
+    color: blueviolet;
+    font-size : 35px;
+    font-family: sans-serif;
+    padding-left: 20px;
+    float: left;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height:70px;
+
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14 px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:blanchedalmond;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.3s ease-in ;
+}
+
+ul li a:hover{
+    color:blueviolet;
+}
+
+.search-bar{
+    width:330px;
+    float: left;
+    margin-left: 200px;
+}
+
+.srch{
+    font-size: 'Times New Roman';
+    width: 200px;   
+    height: 18px;
+    background: transparent;
+    border: 1px solid blueviolet;
+    margin-top:13px ;
+    color: blanchedalmond;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius:5px ;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: blueviolet;
+    border: 2px solid blueviolet;
+    margin-top: 13px ;
+    color: blanchedalmond;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline:none;
 }
