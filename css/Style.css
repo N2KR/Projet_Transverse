@@ -3,63 +3,81 @@
     padding: 0;
 }
 
-.page{
-    width: 100%;
+html{
+  
     background: linear-gradient(to top, rgba(0,0,0,0.5)35%,rgba(0,0,0,0.5)45%), url(../img/image_fond2.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    
+}
+
+.page{
+    width:100%;
+    height: 100%;
 }
 
 .navigation{
-    width: 1200px;
+    
     height: 75px;
-    margin: auto;
+    margin: 2%;
+    margin-left: 10%;
 }
 
 .logo_box{
-    width: 200px;
+    width: 10%;
     float: left;
-    height: 70px;
+    height: 10%;
 }
 
 
 .logo{
-    color: #ff7200;
-    font-size: 35px;
-    font-family: Arial;
-    padding-left: 20px;
+    color: #e77a21;
+    padding-left: 5%;
     float: left;
-    padding-top: 10px;
-    margin-top: 5px
+    padding-top: 5%;
+    margin-top: 5%
 }
 
 .logo img{
     border: 6px double;
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px #ff7200;
+    border-radius: 20%;
+    box-shadow: 10px 5px 5px #e77a21;
     border-color: blueviolet;
     width: 80%;
 }
 .menu{
-    width: 370px;
+    padding-top: 2%;
+    width: 65%;
     float: left;
-    height: 100px;
+    height: 80%;
 }
 
 ul{
     float: left;
     position:absolute;
     display:flex;
-    justify-content: center;
     align-items: center;
 }
 
 ul li{
     list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
+    padding-left:20%;
+    margin-top: 8%;
+    font-size: 100%;
+}
+@media only screen and (max-width: 1450px) {
+    ul li{
+        font-size: 70%;
+    }
+
+ }
+ @media only screen and (max-width: 1030px) {
+    ul li{
+        font-size: 50%;
+    }
+ }
+ @media only screen and (max-width: 740px) {
+    ul li{
+        font-size: 30%;
+    }
 }
 
 ul li a{
@@ -71,45 +89,90 @@ ul li a{
 }
 
 ul li a:hover{
-    color: #ff7200;
+    color: #e77a21;
 }
 
 .rechercher{
     float: left;
-    margin-top:0.5%;
+    margin-top:3%;
     position: relative;
-    width: 330px;
-    left:30%;
+    width: 25%;
 }
+@media only screen and (max-width: 1030px) {
+    .rechercher{
+        width: 25%;
+        height: 150%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .rechercher{
+        width: 15%;
+        height: 100%;
+        left:10%;
+    }
+}
+
 
 .rchr{
     font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
+    width: 50%;
+    height: 20%;
     background: transparent;
-    border: 1px solid #ff7200;
-    margin-top: 13px;
+    border: 1px solid #e77a21;
+    margin-top: 4%;
     color: #fff;
     border-right: none;
     font-size: 16px;
     float: left;
-    padding: 10px;
+    padding: 2.8%;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
+@media only screen and (max-width: 1030px) {
+    .rchr{
+        width: 45%;
+        font-size: 7px;;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .rchr{
+        width: 35%;
+        font-size: 2px;;
+    }
+}
 
 .bouton{
-    width: 100px;
-    height: 40px;
-    background: #ff7200;
-    border: 2px solid #ff7200;
-    margin-top: 13px;
+    width: 30%;
+    background: #e77a21;
+    border: 2px solid #e77a21;
+    margin-top: 4%;
+    padding-top:3%;
+    padding-bottom: 2%;
     color: #fff;
     font-size: 15px;
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: 0.2s ease;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1030px) {
+    .bouton{
+        width: 25%;
+        font-size: 7px;;
+        height: 20%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bouton{
+        width: 35%;
+        font-size: 3px;;
+        height: 0%;
+        position: relative;
+        bottom:6%;
+        padding-bottom: 10%;
+        
+    }
 }
 .bouton:hover{
     color: #000;
@@ -124,7 +187,7 @@ ul li a:hover{
 }
 
 .container{
-    width: 1200px;
+    width: 80%;
     height: auto;
     margin: auto;
     color: #fff;
@@ -132,34 +195,81 @@ ul li a:hover{
 }
 
 .container .paragraph{
-    padding-left: 20px;
-    padding-bottom: 25px;
+    padding-left: 2%;
+    padding-bottom: 2%;
     font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
+    letter-spacing: 1.1px;
+    line-height: 200%;
+}
+@media only screen and (max-width: 1200px) {
+    .container .paragraph{
+        font-size: 10px;
+    }
 }
 
+@media only screen and (max-width: 810px) {
+    .container .paragraph{
+        font-size: 6px;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .container .paragraph{
+        font-size: 4px;
+    }
+}
 .container h1{
     font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
+    font-size: 300%;
+    padding-left: 1%;
     margin-top: 9%;
     letter-spacing: 2px;
 }
+@media only screen and (max-width: 1200px) {
+    .container h1{
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width: 810px) {
+    .container h1{
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .container h1{
+        font-size: 100%;
+    }
+}
 
 .container .rjdr{
-    width: 160px;
+    width: 15%;
     height: 40px;
-    background: #ff7200;
+    background: #e77a21;
     border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin-bottom: 10%;
+    margin-left: 1%;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    transition: .4s ease;
-    
+    transition: .4s ease;   
 }
+@media only screen and (max-width: 1200px) {
+    .container .rjdr{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 810px) {
+    .container .rjdr{
+        font-size: 8px;
+        height: 20px;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .container .rjdr{
+        font-size: 6px;
+        height: 15px;
+    }
+}
+
 
 .container .rjdr a{
     text-decoration: none;
@@ -172,7 +282,7 @@ ul li a:hover{
 }
 
 .container span{
-    color: #ff7200;
+    color: #e77a21;
     font-size: 65px
 }
 
@@ -180,33 +290,62 @@ ul li a:hover{
     width: 250px;
     padding: 25px;
     height: 380px;
-    top: -20px;
-    left: 870px;
+    top: 0%;
+    left: 80%;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
     transform: translate(0%,-5%);
     border-radius: 10px;
 }
-
+@media only screen and (max-width: 1160px) {
+    .box{
+        width: 150px;
+        height: 220px;
+    }
+}
+@media only screen and (max-width: 810px) {
+    .box{
+        left:70%;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .box{
+        left: 70%;
+        width: 100px;
+        height: 150px;
+    }
+}
 .box h2{
-    margin: 2px;
+    margin: 3px;
     font-family: sans-serif;
     text-align: center;
     border-radius: 10px;
-    color: #ff7200;
-    width: 220px;
+    color: #e77a21;
+    width: 90%;
     font-size: 22px;
     background-color: #fff;
-    padding: 8px;
+    padding: 4%;
+}
+@media only screen and (max-width: 1160px) {
+    .box h2{
+        width: 90%;
+        font-size:16px;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .box h2{
+        width: 90%;
+        font-size:8px;
+    }
 }
 
 .box input{
-    width: 240px;
-    height: 35px;
-    border-bottom: 1px solid #ff7200;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid #e77a21;
     border-top: none;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 10%;
     font-family: sans-serif;
     border-right: none;
     border-left: none;
@@ -214,6 +353,21 @@ ul li a:hover{
     font-size: 15px;
     background: transparent;
 }
+@media only screen and (max-width: 1160px) {
+    .box input{
+        width: 100%;
+        height: 6%;
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .box input{
+        width: 100%;
+        height: 6%;
+        font-size: 5px;
+    }
+}
+
 
 .box input:focus{
     outline: none;
@@ -225,10 +379,10 @@ ul li a:hover{
 }
 
 .bouton1{
-    width: 240px;
+    width: 100%;
     height: 40px;
     margin-top: 30px;
-    background: #ff7200;
+    background: #e77a21;
     color: #fff;
     transition: 0.4s ease;
     border: none;
@@ -236,9 +390,24 @@ ul li a:hover{
     border-radius: 10px;
     cursor: pointer;
 }
+@media only screen and (max-width: 1160px) {
+    .bouton1{
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .bouton1{
+        width: 100%;
+        height: 20px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
 .bouton1:hover{
     background: #fff;
-    color: #ff7200;
+    color: #e77a21;
 }
 .bouton1 a{
     text-decoration: none;
@@ -246,12 +415,38 @@ ul li a:hover{
     font-weight: bold;
 }
 .box .inscipt{
-    padding-top: 20px;
+    padding-top: 8%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     text-align: center;
 }
+@media only screen and (max-width: 1160px) {
+    .box .inscipt{
+        width: 100%;
+        height: 30px;
+        font-size: 15px; ;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .box .inscipt{
+        width: 100%;
+        margin-top: 5px;
+        font-size: 11px; ;
+    }
+}
 .box .inscipt a{
     text-decoration: none;
-    color: #ff7200;
+    color: #e77a21;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
