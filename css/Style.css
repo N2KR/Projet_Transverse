@@ -450,28 +450,6 @@ ul li a:hover{
         transform: rotate(360deg);
     }
 }
-/*LA PARTIE à LUCAS */
-.titre_apropo{
-    margin-top: 5%;
-    font-size: 50px;
-    color: white;
-}
-.text_apropo{
-    color: white;
-}
-.bouton2{
-    width: 240px;
-    height: 40px;
-    margin-top: 30px;
-    background: #000FFF;
-    color: #fff;
-    transition: 0.4s ease;
-    border: none;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    position : absolute;
-    bottom : 0;
-    margin-left: 10px;
 
-}
+
+/*LA PARTIE à LUCAS */
