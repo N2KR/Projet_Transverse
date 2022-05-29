@@ -17,7 +17,7 @@
                     <li><a href="./apropos.html">ACCUEIL</a></li>
                     <li><a href="./apropos.html">A.PROPOS</a></li>
                     <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">INFORMATION</a></li>
+                    <li><a href="#">FORMATION</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -46,15 +46,15 @@
 
                 <button class="rjdr" onclick="alert('REJOIGNEZ')">Rejoignez nous !</button>
 
-                <div class="box">
+                <form name="newuser" action="#" class="box" id="newUer" onsubmit="return false">
                     <h2>Connectez-vous</h2>
-                    <input type="email" placeholder="Entrer votre email" required>
-                    <input type="password" placeholder="Entrer votre password" required>
+                    <input type="email" name="mail" placeholder="Entrer votre email" required>
+                    <input type="password" name="mdp" placeholder="Entrer votre password" required>
                     <button class="bouton1" onclick="alert('CONNEXION')">Connexion</button>
 
                     <p class="inscipt">Pas de compt ?<br>
-                    <a href="#">Enregistrez-vous </a></p>
-                </div>
+                    <a href="./register.html">Enregistrez-vous </a></p>
+                </form>
                     </div>
                 </div>
     </body>
