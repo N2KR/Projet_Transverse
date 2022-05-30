@@ -63,22 +63,6 @@ ul li{
     margin-top: 8%;
     font-size: 100%;
 }
-@media only screen and (max-width: 1450px) {
-    ul li{
-        font-size: 70%;
-    }
-
- }
- @media only screen and (max-width: 1030px) {
-    ul li{
-        font-size: 50%;
-    }
- }
- @media only screen and (max-width: 740px) {
-    ul li{
-        font-size: 30%;
-    }
-}
 
 ul li a{
     text-decoration: none;
@@ -90,100 +74,6 @@ ul li a{
 
 ul li a:hover{
     color: #e77a21;
-}
-
-.rechercher{
-    float: left;
-    margin-top:3%;
-    position: relative;
-    width: 25%;
-}
-@media only screen and (max-width: 1030px) {
-    .rechercher{
-        width: 25%;
-        height: 150%;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .rechercher{
-        width: 15%;
-        height: 100%;
-        left:10%;
-    }
-}
-
-
-.rchr{
-    font-family: 'Times New Roman';
-    width: 50%;
-    height: 20%;
-    background: transparent;
-    border: 1px solid #e77a21;
-    margin-top: 4%;
-    color: #fff;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 2.8%;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-@media only screen and (max-width: 1030px) {
-    .rchr{
-        width: 45%;
-        font-size: 7px;;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .rchr{
-        width: 35%;
-        font-size: 2px;;
-    }
-}
-
-.bouton{
-    width: 30%;
-    background: #e77a21;
-    border: 2px solid #e77a21;
-    margin-top: 4%;
-    padding-top:3%;
-    padding-bottom: 2%;
-    color: #fff;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 1030px) {
-    .bouton{
-        width: 25%;
-        font-size: 7px;;
-        height: 20%;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .bouton{
-        width: 35%;
-        font-size: 3px;;
-        height: 0%;
-        position: relative;
-        bottom:6%;
-        padding-bottom: 10%;
-        
-    }
-}
-.bouton:hover{
-    color: #000;
-}
-
-.bouton:focus{
-    outline: none;
-}
-
-.rchr:focus{
-    outline: none;
 }
 
 .container{
@@ -201,43 +91,12 @@ ul li a:hover{
     letter-spacing: 1.1px;
     line-height: 200%;
 }
-@media only screen and (max-width: 1200px) {
-    .container .paragraph{
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width: 810px) {
-    .container .paragraph{
-        font-size: 6px;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .container .paragraph{
-        font-size: 4px;
-    }
-}
 .container h1{
     font-family: 'Times New Roman';
     font-size: 300%;
     padding-left: 1%;
     margin-top: 9%;
     letter-spacing: 2px;
-}
-@media only screen and (max-width: 1200px) {
-    .container h1{
-        font-size: 200%;
-    }
-}
-@media only screen and (max-width: 810px) {
-    .container h1{
-        font-size: 150%;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .container h1{
-        font-size: 100%;
-    }
 }
 
 .container .rjdr{
@@ -252,24 +111,6 @@ ul li a:hover{
     cursor: pointer;
     transition: .4s ease;   
 }
-@media only screen and (max-width: 1200px) {
-    .container .rjdr{
-        font-size: 10px;
-    }
-}
-@media only screen and (max-width: 810px) {
-    .container .rjdr{
-        font-size: 8px;
-        height: 20px;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .container .rjdr{
-        font-size: 6px;
-        height: 15px;
-    }
-}
-
 
 .container .rjdr a{
     text-decoration: none;
@@ -297,24 +138,7 @@ ul li a:hover{
     transform: translate(0%,-5%);
     border-radius: 10px;
 }
-@media only screen and (max-width: 1160px) {
-    .box{
-        width: 150px;
-        height: 220px;
-    }
-}
-@media only screen and (max-width: 810px) {
-    .box{
-        left:70%;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .box{
-        left: 70%;
-        width: 100px;
-        height: 150px;
-    }
-}
+
 .box h2{
     margin: 3px;
     font-family: sans-serif;
@@ -326,19 +150,6 @@ ul li a:hover{
     background-color: #fff;
     padding: 4%;
 }
-@media only screen and (max-width: 1160px) {
-    .box h2{
-        width: 90%;
-        font-size:16px;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .box h2{
-        width: 90%;
-        font-size:8px;
-    }
-}
-
 .box input{
     width: 100%;
     height: 10%;
@@ -353,21 +164,6 @@ ul li a:hover{
     font-size: 15px;
     background: transparent;
 }
-@media only screen and (max-width: 1160px) {
-    .box input{
-        width: 100%;
-        height: 6%;
-        font-size: 10px;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .box input{
-        width: 100%;
-        height: 6%;
-        font-size: 5px;
-    }
-}
-
 
 .box input:focus{
     outline: none;
@@ -390,21 +186,7 @@ ul li a:hover{
     border-radius: 10px;
     cursor: pointer;
 }
-@media only screen and (max-width: 1160px) {
-    .bouton1{
-        width: 100%;
-        height: 30px;
-        font-size: 14px;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .bouton1{
-        width: 100%;
-        height: 20px;
-        margin-top: 20px;
-        font-size: 12px;
-    }
-}
+
 .bouton1:hover{
     background: #fff;
     color: #e77a21;
@@ -420,20 +202,7 @@ ul li a:hover{
     font-size: 17px;
     text-align: center;
 }
-@media only screen and (max-width: 1160px) {
-    .box .inscipt{
-        width: 100%;
-        height: 30px;
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .box .inscipt{
-        width: 100%;
-        margin-top: 5px;
-        font-size: 11px; 
-    }
-}
+
 .box .inscipt a{
     text-decoration: none;
     color: #e77a21;
@@ -463,17 +232,6 @@ ul li a:hover{
     transform: translate(0%,-5%);
     border-radius: 10px;
 }
-@media only screen and (max-width: 1160px) {
-    .inscri_box{
-        width: 200px;
-        height: 300px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .inscri_box{
-       left:28%;
-    }
-}
 
 .inscri_box h2{
     margin: 3px;
@@ -486,12 +244,7 @@ ul li a:hover{
     background-color: #fff;
     padding: 4%;
 }
-@media only screen and (max-width: 1160px) {
-    .inscri_box h2{
-        width: 90%;
-        font-size:20px;
-    }
-}
+
 
 .inscri_box input{
     width: 100%;
@@ -505,12 +258,6 @@ ul li a:hover{
     color: #fff;
     font-size: 15px;
     background: transparent;
-}
-@media only screen and (max-width: 1160px) {
-    .inscri_box input{
-        width: 100%;
-        font-size: 10px;
-    }
 }
 
 .inscri_box input:focus{
@@ -532,13 +279,7 @@ ul li a:hover{
     background-color: #fff;
     color: #e77a21;
 }
-@media only screen and (max-width: 1160px) {
-    .annulreg {
-        width: 100%;
-        margin-top: 10px;
-        font-size: 10px;
-    }
-}
+
 .bouton5{
     width: 100%;
     height: 40px;
@@ -551,22 +292,7 @@ ul li a:hover{
     border-radius: 10px;
     cursor: pointer;
 }
-@media only screen and (max-width: 1160px) {
-    .bouton5{
-        margin-top: 15px;
-        width: 100%;
-        height: 25px;
-        font-size: 14px;
-    }
-}
-@media only screen and (max-width: 635px) {
-    .bouton5{
-        width: 100%;
-        height: 20px;
-        margin-top: 20px;
-        font-size: 12px;
-    }
-}
+
 .bouton5:hover{
     background: #fff;
     color: #e77a21;
@@ -578,13 +304,42 @@ ul li a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
 /*LA PARTIE à LUCAS */
+.titre_apropo{
+    margin-top: 5%;
+    font-size: 50px;
+    color: white;
+}
+.text_apropo p{
+    margin-left: 15%;
+}
+.apropos{
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.text_apropo{
+    color: white;
+    width: 75%;
+    margin : 5% ;
+}
+.bouton2{
+    width: 240px;
+    height: 40px;
+    margin-top: 30px;
+    background: #e77a21;
+    color: #fff;
+    transition: 0.4s ease;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.apropos img{
+    width: 300px;
+    height: 200px;
+    margin: 1%;
+    display: inline-block;
+}
