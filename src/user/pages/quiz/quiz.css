@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Bebas";
+  src: local("Bebas"), url(../../asset/BebasNeue.ttf) format("opentype");
+}
+
+.quiz {
+  background-color: var(--background);
+  height: calc(100vh - var(--topbar-height));
+  width: 100%;
+  color: #f2f2f2;
+}
+
+.quiz-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #2d2d2d;
+  border: 2px solid #444444;
+  padding: 20px;
+  margin: 0px 10px 0px 10px;
+}
+
+.quiz-question {
+  margin-bottom: 16px;
+}
+
+.quiz-title {
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  text-align: center;
+  font-size: 40px;
+  font-family: Bebas;
+  margin-bottom: 20px;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
+  0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
+  0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
+  0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
+  0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.quiz-description {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.quiz-select {
+  color: #455560;
+  border: 2px solid #455560;
+  margin-left: 10px;
+}
+
+.quiz-button {
+  padding: 10px 110px;
+  border-radius: 20px;
+  border: none;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.quiz-button:hover {
+  background: #fbbc05;
+}
+
+.quiz-result {
+  font-size: 20px;
+  font-family: Bebas;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  text-align: center;
+  padding-top: 200px;
+}
+
+a:hover {
+  color: hotpink;
+}

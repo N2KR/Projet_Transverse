@@ -1,0 +1,22 @@
+[
+    {
+        "display_name": "Accueil",
+        "route": "/home",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Information",
+        "route": "/information",
+        "icon": "bx bx-info-circle"
+    },
+    {
+        "display_name": "Quiz",
+        "route": "/quiz",
+        "icon": "bx bxs-report"
+    },
+    {
+        "display_name": "Contact",
+        "route": "/contact",
+        "icon": "bx bx-mail-send"
+    }
+]

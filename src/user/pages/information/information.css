@@ -1,0 +1,13 @@
+.information {
+  background-color: var(--background);
+  height: calc(100vh - var(--topbar-height));
+  width: 100%;
+  color: #f2f2f2;
+}
+
+.information-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

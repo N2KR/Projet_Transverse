@@ -1,0 +1,52 @@
+[
+    {
+        "index": "1",
+        "description": "Vous recevez un spam dans votre boîte mail, vous bloquer l’expéditeur puis vous le supprimer ?",
+        "result": "oui"
+    },
+    {
+        "index": "2",
+        "description": "Vous venez de recevoir un SMS sur votre smartphone vous indiquant que votre colis n’a pas pu être livré et celui-ci vous demande de payer des frais d'expédition. Or vous n’avez rien commandé, décidez vous de payer malgré tout ?",
+        "result": "non"
+    },
+    {
+        "index": "3",
+        "description": "Sur Instagram une célébrité vous proposes de vous offrir le dernier iPhone, mais pour cela il vous demande de cliquer sur un lien. Bloquez-vous son profil ?",
+        "result": "oui"
+    },
+    {
+        "index": "4",
+        "description": "Un site attire votre regard sur un site internet que vous ne connaissez pas, cliquez-vous dessus ?",
+        "result": "non"
+    },
+    {
+        "index": "5",
+        "description": "Vous êtes sur un site que vous ne connaissez pas, acceptez-vous les cookies ?",
+        "result": "non"
+    },
+    {
+        "index": "6",
+        "description": "Vous êtes dans une gare, un réseau public est disponible vous y connectez-vous ?",
+        "result": "non"
+    },
+    {
+        "index": "7",
+        "description": "Un site web vous demande d’enregistrer votre carte bleue pour vous y connecter, acceptez-vous de le faire ?",
+        "result": "non"
+    },
+    {
+        "index": "8",
+        "description": "Un bon mot de passe doit contenir au moins 8 caractères de types différents (majuscule, minuscule, chiffre, caractères spéciaux...)",
+        "result": "oui"
+    },
+    {
+        "index": "9",
+        "description": "Un site web au protocole « HTTP » et non pas « HTTPS » vous demande de saisir des informations personnelles, les saisissez-vous ?",
+        "result": "non"
+    },
+    {
+        "index": "10",
+        "description": "Le phishing est-il un type de piratage ?",
+        "result": "oui"
+    }
+]

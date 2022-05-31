@@ -1,0 +1,27 @@
+[
+    {
+        "display_name": "Kevin Nakkour",
+        "description": "Chef de projet",
+        "gender": "male"
+    },
+    {
+        "display_name": "Rayan Bellil",
+        "description": "Chef de produit",
+        "gender": "male"
+    },
+    {
+        "display_name": "Paul Bouzard",
+        "description": "Développeur",
+        "gender": "male"
+    },
+    {
+        "display_name": "Safa Ben Nasr",
+        "description": "Responsable design",
+        "gender": "female"
+    },
+    {
+        "display_name": "Lucas Leotin",
+        "description": "Commercial",
+        "gender": "male"
+    }
+]

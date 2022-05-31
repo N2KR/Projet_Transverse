@@ -1,0 +1,34 @@
+.home {
+  background-color: var(--background);
+  height: calc(100vh - var(--topbar-height));
+  width: 100%;
+  color: #f2f2f2;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-paragraph {
+  width: 80%;
+  margin-top: 80px;
+}
+
+.home-span {
+  item-align: center;
+  margin-top: 40px;
+}
+
+.home-audit {
+  width: 200px;
+  height: 180px;
+  margin-right: 100px;
+}
+
+.home-siege {
+  width: 260px;
+  height: 180px;
+}

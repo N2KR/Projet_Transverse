@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Bebas";
+  src: local("Bebas"), url(../../asset/BebasNeue.ttf) format("opentype");
+}
+.topbar {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--topbar-height);
+  background-color: var(--background);
+}
+
+.topbar_search {
+  position: relative;
+  height: 50px;
+  background-color: var(--background-card);
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.topbar_search > input {
+  height: 100%;
+  width: 100%;
+  padding: 10px 60px 10px 20px;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  color: var(--txt-color);
+  background-color: var(--background-card);
+}
+
+.topbar_search > i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 20px;
+}
+
+.topbar_middle {
+  font-size: 1.5rem;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+}
+
+.topbar_right {
+  display: flex;
+  align-items: center;
+}
+
+.topbar_right-item ~ .topbar_right-item {
+  margin-left: 30px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: var(--txt-color);
+}
+
+.notification-item:hover {
+  background-color: var(--primary);
+}
+
+.notification-item > i {
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+.topbar_right-user {
+  display: flex;
+  align-items: center;
+}
+
+.topbar_right-user_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.topbar_right-user_image > img {
+  width: 100%;
+}
+
+.topbar_right-user_name {
+  font-size: 1rem;
+  font-weight: 600;
+}

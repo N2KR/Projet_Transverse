@@ -1,0 +1,119 @@
+.register-Container {
+  background: url('../../asset/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.register-Container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.register-alert {
+  position: absolute;
+  top: 4%;
+}
+
+.register-Contain {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 80px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+/* Register title and logo */
+.register-Title {
+  font-size: 40px;
+  color: #e2e2e2;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.register-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  cursor: 0;
+  padding: 10px;
+}
+
+/* Register search panel */
+.register-search {
+  outline: none;
+  padding: 16px 60px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+  background: rgba(101, 101, 101, 0.85);
+  color: white;
+  border: 1px solid rgba(101, 101, 101, 0.85);
+}
+.register-search:hover {
+  border: 1px solid #fbbc05;
+}
+/* Register button */
+.register-button {
+  padding: 10px 110px;
+  border-radius: 20px;
+  border: none;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.register-button:hover {
+  background: #fbbc05;
+}
+
+.register-backButton {
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background: #5393ddbe;
+  flex-direction: column;
+}
+
+.register-backButton:hover {
+  background-color: beige;
+}
+
+.register-icon {
+  padding-top: 5px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  color: #dbd4c7;
+}
+
+.register-txt {
+  color: #dbd4c7;
+  font-size: 40px;
+}
+
+.register-loginLink {
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.register-loginLink:hover {
+  color: #fbbc05;
+}

@@ -1,0 +1,131 @@
+.login-Container {
+    background: url('../../asset/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-Container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.login-alert {
+  position: absolute;
+  top: 4%;
+}
+
+  .login-Contain {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    border: 2px solid black;
+  }
+  
+  /* Login title and logo */
+  .login-Title {
+    font-size: 40px;
+    color: #e2e2e2;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .login-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    cursor: 0;
+    padding: 10px;
+  }
+  
+  /* Login search panel */
+  .login-search {
+    outline: none;
+    padding: 16px 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(101, 101, 101, 0.85);
+    margin-bottom: 20px;
+    background: rgba(101, 101, 101, 0.85);
+    color: white;
+  }
+  
+  .login-search:hover {
+    border: 1px solid #FBBC05;
+  }
+  
+  /* Password search panel */
+  .password-search {
+    outline: none;
+    padding: 16px 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(101, 101, 101, 0.85);
+    margin-bottom: 20px;
+    background: rgba(101, 101, 101, 0.85);
+    color: white;
+  }
+  
+  .password-search:hover {
+    border: 1px solid #FBBC05;
+  }
+  
+  ::placeholder {
+    color: white;
+  }
+  
+  /* Login button */
+  .login-button {
+    padding: 10px 110px;
+    border-radius: 20px;
+    background: white;
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  .login-button:hover {
+    background: #FBBC05;
+  }
+  
+  /* Register link */
+  .login-registerLink {
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .login-registerLink:hover {
+    color: #FBBC05;
+  }
+  
+  /* Google authentification */
+  .login-google {
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .login-google:hover {
+    color: #4285F4;
+  }
+  
