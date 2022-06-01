@@ -8,7 +8,7 @@ import db from "../../firebase/firebase";
 import { doc, setDoc } from "firebase/firestore";
 import Logo from '../../asset/logo.png';
 import Alert from '@material-ui/lab/Alert';
-
+//Donc lorsque l'utilisateur s'enregistre sur le site non allons initialiser les valeures
 export default function Register() {
     let navigate = useNavigate()
     const [login, setLogin] = useState("");
@@ -17,19 +17,19 @@ export default function Register() {
     const [success, setSuccess] = useState("");
     var username = "";
 
-    // Sleep Function
+    // fonction pour temps de transition
     const sleep = (milliseconds) => {
         return new Promise(resolve => setTimeout(resolve, milliseconds))
     }
 
-    // Handle Register Button
+    // Pour gérer l'action du boutton register
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log({ login }, { password });
-        registerRequest();
+        registerRequest();//on envoie la requete d'incription
     };
 
-    //  Registration Process
+    //  Processus d'enregistrement toujours asynchrone car on a besoin d'ecrire dans la base de données l'ajout d'un utilisateur
     const registerRequest = async () => {
         try {
             const user = await createUserWithEmailAndPassword(
@@ -60,13 +60,13 @@ export default function Register() {
         }
     };
 
-    // Successfully Registered and Redirect
+    // Lorsque l'on est enregistrer l'utilisateur est directement rediriger vers la page d'accueil (login)
     const logginPage = () => {
         navigate('/');
         window.location.reload();
     };
 
-    // Alert Message
+    // Message d'alerte personnalisé
     const renderError = () => {
         if (error !== "") {
             return (
@@ -76,7 +76,7 @@ export default function Register() {
             );
         }
     };
-
+    // Message d'alerte personnalisé
     const renderSuccess = () => {
         if (success !== "") {
             return (
@@ -86,7 +86,7 @@ export default function Register() {
             );
         }
     };
-
+    //Ce que la page d'enregistrement afficher
     return (
         <div className="register-Container">
             {renderError()}

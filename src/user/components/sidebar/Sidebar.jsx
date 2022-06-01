@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import './sidebar.css'
 import '../../asset/boxicons-2.0.7/css/boxicons.min.css'
 import logo from '../../asset/image/logo.png'
-import sidebar_items from '../../asset/JsonData/sidebar_routes.json'
+import sidebar_items from '../../asset/JsonData/sidebar_routes.json' //pour les composants on accède a son propre fichier JSON
 import { useLocation } from "react-router-dom"
-
+//Je sais pas c'est quoi j'ai oublié ?
 const SidebarItem = props => {
 
     const active = props.active ? 'active' : ''
@@ -21,7 +21,7 @@ const SidebarItem = props => {
         </div>
     )
 }
-
+//Donc on va afficher dans la colonne de gauche chaque props donc les redirection de chaque pages
 const Sidebar = () => {
 
     const sampleLocation = useLocation();

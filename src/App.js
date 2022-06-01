@@ -9,7 +9,7 @@ import Information from "./user/pages/information/Information";
 import Quiz from "./user/pages/quiz/Quiz"
 import Contact from "./user/pages/contact/Contact";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+// Elle sert a quoi cette fonction ? autoriser l'utilisateur si son role est 1 à avoir acces au différentes pages et d'acceder aux pages?
 function App() {
     var logged = window.localStorage.getItem('logged')
     var role = window.localStorage.getItem('role')

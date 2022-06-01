@@ -2,7 +2,7 @@ import "./home.css";
 import React from "react";
 import siegeImage from "../../asset/image/siege.png";
 import auditImage from "../../asset/image/audit.png";
-
+//Ici de facon dur on affiche comme sur une page html le contenu de la page acceuil 
 export default function Home() {
   document.title = "SafeNet - Accueil";
 

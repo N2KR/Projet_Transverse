@@ -8,7 +8,8 @@ import { auth } from "../../../firebase/firebase";
 import { signOut } from "@firebase/auth";
 import Alert from "@material-ui/lab/Alert";
 import { Link, useNavigate } from "react-router-dom";
-
+//La top bar se situe en haut à droite, elle permet d'afficher l'avatar de l'utilisateur et son nom. Elle contient des props qui lorsque 
+//l'on interagie avec la sourie permet de voir le profil( le code n'a pas été fait car pas très utile) et se deconnecter qui est fonctionnel et nécéssaire
 const Topbar = () => {
   let navigate = useNavigate();
   const [success, setSuccess] = useState("");
@@ -19,11 +20,11 @@ const Topbar = () => {
     image: user_image,
   };
 
-  // Sleep Function
+  // fonction de transition
   const sleep = (milliseconds) => {
     return new Promise((resolve) => setTimeout(resolve, milliseconds));
   };
-
+  //lorsque l'utilisateur se déconnecte une alerte apparait
   const renderDeconnexion = () => {
     if (success !== "") {
       return (
@@ -33,14 +34,14 @@ const Topbar = () => {
       );
     }
   };
-
+  //afficher les elments sur la page tel que la cloche de notification
   const renderNotificationItem = (item, index) => (
     <div className="notification-item" key={index}>
       <i className={item.icon}></i>
       <span>{item.content}</span>
     </div>
   );
-
+  //affichage du nom plus icon de l'utilisateur 
   const renderUserToggle = (user) => (
     <div className="topbar_right-user">
       <div className="topbar_right-user_image">
@@ -49,7 +50,7 @@ const Topbar = () => {
       <div className="topbar_right-user_name">{user.display_name}</div>
     </div>
   );
-
+  //pour gérer l'action lorsque l'on clique sur le bouton deconnexion ou profil (bien sur le bouton profil affichera juste "profile" dans la consol)
   const handleClick = async (event) => {
     const text = event.target.textContent;
     if (text === "Profile") {
@@ -61,7 +62,7 @@ const Topbar = () => {
       Logout();
     }
   };
-
+  //Pour afficher la notification "du quizz disponilble avec son icon "
   const renderUserMenu = (item, index) => {
     console.log(item.content);
     return (
@@ -73,7 +74,7 @@ const Topbar = () => {
       </div>
     );
   };
-
+ //lorsque l'utilisateur se déconnecte il est obligatoire de supprimer ses informations sinon beug et on est redirigé à la page de login 
   const Logout = async () => {
     window.localStorage.removeItem("logged");
     window.localStorage.removeItem("email");
