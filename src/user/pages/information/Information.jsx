@@ -1,3 +1,5 @@
+// Cette page permet de répertorier des informations utiles sur les types d'attaques malveillantes
+
 import "./information.css";
 import React from "react";
 import siegeImage from "../../asset/image/siege.png";
