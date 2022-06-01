@@ -4,7 +4,8 @@ import { getDoc, doc, updateDoc } from "firebase/firestore";
 import db from "../../../firebase/firebase";
 import Alert from "@material-ui/lab/Alert";
 // import quiz from "../../asset/JsonData/question.json";
-
+//creation de notre QUIZ Donc on set les question sur oui au debut et on met à nul les variable d'etat error et success
+//on attribut le quizz à l'uid de l'utilisateur et son résultat (on les récupaires) 
 export default function Quiz() {
   document.title = "SafeNet - Quiz";
   const [Q1, setQ1] = useState("oui");
@@ -27,11 +28,11 @@ export default function Quiz() {
   useEffect(() => {
     Fetchdata();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
+  //La transition 
   const sleep = (milliseconds) => {
     return new Promise((resolve) => setTimeout(resolve, milliseconds));
   };
-
+  //Si l'utilisateur réussi le quizz alors, alert avec succes
   const renderSuccess = () => {
     if (success !== "") {
       return (
@@ -43,7 +44,7 @@ export default function Quiz() {
       );
     }
   };
-
+//ca contraire l'utilisateur ne réussi pas alors erreur
   const renderError = () => {
     if (error !== "") {
       return (
@@ -55,7 +56,7 @@ export default function Quiz() {
       );
     }
   };
-
+  //lorsque l'utilisateur a fini de remplir le quizz on emet son résultat 
   const Fetchdata = async () => {
     const docSnap = await getDoc(results);
     if (docSnap.exists()) {
@@ -69,13 +70,13 @@ export default function Quiz() {
       console.log("No such document!");
     }
   };
-
+  //pour gérer la validation du quizz quant on appuie sur le bouton
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(Q1, Q2);
     result();
   };
-
+  //implémentation du code avec les questions et les choix et attribution au constante Q1... les valeurs de l'utilisateur 
   const renderQuiz = () => {
     if (total === "") {
       return (
@@ -242,7 +243,7 @@ export default function Quiz() {
   };
 
   console.log("a =", total);
-
+  //pour afficher à l'ecran le score de l'utilisateur et téléchargement de son diplome
   const renderResult = () => {
     if (total !== "") {
       return (
@@ -254,7 +255,9 @@ export default function Quiz() {
       );
     }
   };
-
+  // la fonction permet de calculer la note du quizz elle est appelé dans handleSubmit lorsque on valide on calcule le resultat
+  //si la note est supérieure ou égale à 6 alors on initialise le résultat de l'utilisateur et la valeur de setSuccess est différente de null
+  //alors après on affiche le message d'alerte dans le cas ou succes on affiche son résultat et son diplome à télécharger sinon alert avec échoué.
   const result = async () => {
     let nb = 0;
     if (Q1 === "oui") {
@@ -308,8 +311,8 @@ export default function Quiz() {
     <div className="quiz">
       {renderSuccess()}
       {renderError()}
-      {renderQuiz()}
       {renderResult()}
+      {renderQuiz()}
     </div>
   );
 }

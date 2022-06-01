@@ -1,6 +1,5 @@
 .information {
   background-color: var(--background);
-  height: calc(100vh - var(--topbar-height));
   width: 100%;
   color: #f2f2f2;
 }
@@ -10,4 +9,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+}
+.information-container h1{
+  color:blueviolet;
+}
+.information-container a{
+  color:darkorange;
+}
+.information-siege{
+  position: relative;
+  width:100%;
 }

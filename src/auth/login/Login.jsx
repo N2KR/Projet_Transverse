@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react';//Pour pouvoir avoir des variables d'états
 import "./login.css"
-import { Link, useNavigate } from 'react-router-dom';
-import { auth } from '../../firebase/firebase';
-import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "@firebase/auth";
-import { LockOpen } from '@material-ui/icons';
-import db from "../../firebase/firebase";
-import { doc, getDoc, setDoc } from "firebase/firestore";
-import Logo from '../../asset/logo.png';
-import Alert from '@material-ui/lab/Alert';
+import { Link, useNavigate } from 'react-router-dom';//package de react pour créer des routes entres différentes pages (pour changer de page)
+import { auth } from '../../firebase/firebase';//firebase
+import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "@firebase/auth";// firebase accès
+import { LockOpen } from '@material-ui/icons';//icon du cadenna 
+import db from "../../firebase/firebase";// firebase
+import { doc, getDoc, setDoc } from "firebase/firestore";// import firebase la BDD
+import Logo from '../../asset/logo.png';//on attribut à logo notre image
+import Alert from '@material-ui/lab/Alert';//personnalisation des alerts
 
 export default function Login() {
     const [login, setLogin] = useState("");
@@ -16,18 +16,18 @@ export default function Login() {
     const [success, setSuccess] = useState("");
     let navigate = useNavigate()
 
-    // Sleep Function
+    // Pour pouvoir appliquer des transitions 
     const sleep = (milliseconds) => {
         return new Promise(resolve => setTimeout(resolve, milliseconds))
     }
 
-    // Handle Login Button
+    // boutton de connexion
     const handleSubmit = (event) => {
         event.preventDefault();
         loginRequest();
     }
 
-    //  Authentification Process
+    //  Processus de connexion
     const loginRequest = async () => {
         try {
             const userInfo = await signInWithEmailAndPassword(
@@ -46,9 +46,9 @@ export default function Login() {
             setError("");
         }
     }
-
+    //On ajoute si utilisateur google, à la base de donnée (firebase) de manière asynchrone car on récupère les données de google avant de pouvoir continuer
+    //le role 1 veut dire que la personne est bien enregistrer
     const provider = new GoogleAuthProvider()
-
     const addGoogleUserToBdd = async () => {
         let uid = auth.currentUser.uid;
         const GoogleUserRef = doc(db, "users", uid);
@@ -66,6 +66,7 @@ export default function Login() {
         }
     };
 
+    //Lorsque l'on ce connecte avec google on vérifie qu'il n'y est pas d'erreur
     const signInWithGoogle = () => {
         signInWithPopup(auth, provider)
         .then(async (result) => {
@@ -78,16 +79,18 @@ export default function Login() {
         })
     };
 
-    // Successfully Logged and Redirect
+    // Lorsque le connexion c'est bien faite, on initialise nos variable d'utilisateur qui seront disponible sur toutes les pages
     const loggedStateGoogle = () => {
         window.localStorage.setItem('logged', 'true');
         window.localStorage.setItem('email', auth.currentUser.email);
         window.localStorage.setItem('uid', auth.currentUser.uid);
         window.localStorage.setItem('name', auth.currentUser.displayName);
+        //et on change de page pour ne pas rester sur la page de connexion
         navigate('/redirect');
         window.location.reload();
     };
 
+    //Si on c'est connecter avec firebase meme processus que google
     const loggedStateFirebase = () => {
         window.localStorage.setItem('logged', 'true');
         window.localStorage.setItem('email', auth.currentUser.email);
@@ -97,7 +100,7 @@ export default function Login() {
         window.location.reload();
     };
 
-    // Alert Message
+    // C'est une alerte JS, si la connexion a mal été faite alors on envoi un méssage d'alerte
     const renderError = () => {
         if (error !== "") {
             return (
@@ -107,7 +110,7 @@ export default function Login() {
             );
         }
     };
-
+    //Meme chose si la connexion est un success
     const renderSuccess = () => {
         if (success !== "") {
             return (
@@ -117,7 +120,7 @@ export default function Login() {
             );
         }
     };
-
+    //Ce qui est afficher/implementer sur la page de connexion on retrouve toutes les fonctions
     return (
         <div className="login-Container">
             {renderError()}

@@ -3,7 +3,7 @@ import React from "react";
 import contact_items from "../../asset/JsonData/contact.json";
 import Male from "../../asset/image/male.png";
 import Female from "../../asset/image/female.png";
-
+//Ici on va gerer la page de contact avec les utilisateur stocker dans la page JSON ici c'est nous l'équipe 
 const ContactItem = (props) => {
   return (
     <div className="contact_items">
@@ -22,7 +22,7 @@ const ContactItem = (props) => {
     </div>
   );
 };
-
+//On va donc afficher tout le contenu de la page et avec le css on gère le style comme d'habitude
 export default function Contact() {
   document.title = "SafeNet - Contact";
 
